@@ -675,20 +675,19 @@ section {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a {
     width: 25px;
     height: 25px;
-    margin-right: 20px;
   }
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.black {
   background: #383733;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.golden {
-  background: #f3e2c1;
+  background: #ffeed7;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.blue {
-  background: #98afc9;
+  background: #bcdaf6;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.green {
-  background: #9cdfcf;
+  background: #f1f2ed;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a:after {
   content: "";
@@ -699,8 +698,8 @@ section {
   border-radius: 100%;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
   position: absolute;
 }
 @media screen and (max-width: 1380px) {
@@ -725,11 +724,6 @@ section {
   line-height: 1.2;
 }
 @media screen and (max-width: 1380px) {
-  .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 1080px) {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label {
     font-size: 18px;
   }
