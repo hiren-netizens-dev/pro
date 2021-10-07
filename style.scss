@@ -133,6 +133,12 @@ section {overflow: hidden;}
     overflow: hidden;
     max-width: 1920px;
     margin: 0 auto;
+    @media screen and (max-width:1380px){
+        zoom: 0.75;
+    }
+    @media screen and (max-width:1080px){
+        zoom: 1;
+    }
     &:after{
         content: "";
         position: absolute;
@@ -154,11 +160,6 @@ section {overflow: hidden;}
         background: $white;
         z-index: 2;
         clip-path: polygon(25% 0%, 0% 100%, 100% 100%);
-        @media screen and (max-width:1380px){
-            width: 100%;
-            height: 240px;
-            clip-path: polygon(25% 0%, 0% 100%, 50% 100%);
-        }
         @media screen and (max-width:1080px){
             content: none;
             display: none;
@@ -176,13 +177,6 @@ section {overflow: hidden;}
             z-index: 1;
             clip-path: polygon(0 0%, 0 100%, 79% 100%);
             transform: rotate(8deg);
-            @media screen and (max-width:1380px){
-                transform: rotate(36deg);
-                left: -190px;
-                bottom: 115px;
-                width: calc(100% + 30px);
-                height: 120px;
-            }
             @media screen and (max-width:1080px){
                 left: -190px;
                 bottom: 0;
@@ -260,9 +254,6 @@ section {overflow: hidden;}
     .product_wrapper{
         margin: 0;
         padding: 76px 0;
-        @media screen and (max-width:1380px) {
-            padding: 60px 0;
-        }
         @media screen and (max-width:991px) {
             padding: 40px 0;
         }
@@ -283,23 +274,14 @@ section {overflow: hidden;}
                 padding-right: 56px;
                 position: relative;
                 margin-top: 130px;
-                @media screen and (max-width:1380px) {
-                    margin-top: 90px;
-                    max-width: calc(100% - 50%);
-                }
                 @media screen and (max-width:1080px){
                     margin-top: 71px;
+                    max-width: calc(100% - 50%);
                 }
                 @media screen and (max-width:991px) {
                     max-width: 260px;
                     margin: 0 auto 30px;
                     padding: 0;
-                }
-                @media screen and (max-width:767px) {
-                    // max-width: 65%;
-                }
-                @media screen and (max-width:575px) {
-                    // max-width: 70%;
                 }
                 .img-tab {
                     display: none;
@@ -308,9 +290,6 @@ section {overflow: hidden;}
                     display: block;
                     width: 100%;
                     max-width: 398px;
-                    @media screen and (max-width:1380px) {
-                        max-width: 325px;
-                    }
                     @media screen and (max-width:1080px){
                         max-width: 320px;
                     }
@@ -355,10 +334,10 @@ section {overflow: hidden;}
                     @media screen and (max-width:1480px) {
                         right: 60px;
                     }
-                    @media screen and (max-width:1380px) {
+                    @media screen and (max-width:1080px){
                         width: 120px;
                         height: 120px;
-                        right: 120px;
+                        right: 70px;
                         span{
                             font-size: 18px;
                         }
@@ -369,9 +348,6 @@ section {overflow: hidden;}
                             width: calc(100% - 8px);
                             height: calc(100% - 8px);
                         }
-                    }
-                    @media screen and (max-width:1080px){
-                        right: 70px;
                     }
                     @media screen and (max-width:991px) {
                         right: -80px;
@@ -421,12 +397,9 @@ section {overflow: hidden;}
                         line-height: 1.2;   
                         display: block;         
                         margin-bottom: 10px;
-                        @media screen and (max-width:1380px){
-                            font-size: 24px;
-                            margin-bottom: 5px;
-                        }
                         @media screen and (max-width:1080px) {
                             font-size: 18px;
+                            margin-bottom: 5px;
                         } 
                     }
                     h1{
@@ -434,10 +407,7 @@ section {overflow: hidden;}
                         font-family: $SFP-Bold;
                         color: $white;
                         font-weight: bold;
-                        line-height: 1.2;    
-                        @media screen and (max-width:1380PX){
-                            font-size: 34px;
-                        }      
+                        line-height: 1.2;
                         @media screen and (max-width:1080px) {
                             font-size: 26px;
                         }
@@ -452,10 +422,7 @@ section {overflow: hidden;}
                     background: #ffffff30;
                     border-radius: 15px;  
                     padding: 35px;
-                    border: 2px solid #fff3;         
-                    @media screen and (max-width:1380px) {
-                        padding: 30px;
-                    }
+                    border: 2px solid #fff3;
                     @media screen and (max-width:575px) {
                         padding: 15px; 
                         .col-12{
@@ -511,7 +478,7 @@ section {overflow: hidden;}
                                 border-radius: 100%;
                                 left: 50%;
                                 top: 50%;
-                                transform: translate(-50%,-50%) scale(0.8);
+                                transform: translate(-50%,-50%) scale(0);
                                 position: absolute;
                                 @media screen and (max-width:1380px) {
                                     width: 36px;
@@ -535,7 +502,7 @@ section {overflow: hidden;}
                             color: $white;
                             line-height: 1.2;
                             @media screen and (max-width:1380px) {
-                                font-size: 20px;
+                                font-size: 18px;
                             }
                             @media screen and (max-width:1080px) {
                                 font-size: 18px;
@@ -705,9 +672,6 @@ section {overflow: hidden;}
         text-align: center;
         margin-bottom: 76px;
         @media screen and (max-width:1380px) {
-            margin-bottom: 50px;
-        }
-        @media screen and (max-width:1080px) {
             margin-bottom: 20px;
         }
         h2{
@@ -716,7 +680,7 @@ section {overflow: hidden;}
             color: rgb(0, 0, 0);
             line-height: 1.09;
             @media screen and (max-width:1380px) {
-                font-size: 44px;
+                font-size: 34px;
             }
             @media screen and (max-width:1080px) {
                 font-size:26px;
@@ -731,7 +695,7 @@ section {overflow: hidden;}
             color: rgb(0, 0, 0);
             text-align: center;
             @media screen and (max-width:1380px) {
-                font-size:74px;
+                font-size:60px;
             }
             @media screen and (max-width:1080px) {
                 font-size:44px;
@@ -856,6 +820,12 @@ section {overflow: hidden;}
 /* GALLERY BLOCK CSS START HERE */ 
 .gallery_wrapper{
     padding: 0 10px;
+    @media screen and (max-width:1380px) {
+        zoom: 0.9;
+    }
+    @media screen and (max-width:1080px) {
+        zoom: 1;
+    }
     .gallery_block{
         display: flex;
         justify-content: space-between;
@@ -1103,7 +1073,11 @@ section {overflow: hidden;}
 .outdoors_wrapper{
     padding: 90px 0 100px;
     overflow: hidden;
+    @media screen and (max-width:1380px) {
+        zoom: 0.9;
+    }
     @media screen and (max-width:1080px) {
+        zoom: 1;
         padding: 40px 0 50px;
     }
     @media screen and (max-width:575px) {
@@ -1161,10 +1135,7 @@ section {overflow: hidden;}
         margin: 0 auto;
         animation: blink 0.7s infinite alternate;
         position: relative;
-        @media screen and (max-width:1380px) {
-            max-width: 640px;
-        }
-        @media screen and (max-width:1380px) {
+        @media screen and (max-width:1080px) {
             max-width: 520px;
         }
         img{
@@ -1200,6 +1171,12 @@ section {overflow: hidden;}
     padding-top: 100px;
     background-color: #000027;
     overflow: hidden;
+    @media screen and (max-width:1380px) {
+        zoom: 0.78;
+    }
+    @media screen and (max-width:1080px) {
+        zoom: 1;
+    }
     &:after{
         content: "";
         position: absolute;
