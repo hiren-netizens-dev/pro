@@ -206,16 +206,6 @@ section {
   /* PRODUCT BLOCK CSS START HERE */
   /* PRODUCT BLOCK CSS END'S HERE */
 }
-@media screen and (max-width: 1380px) {
-  .banner_wrapper {
-    zoom: 0.75;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .banner_wrapper {
-    zoom: 1;
-  }
-}
 .banner_wrapper:after {
   content: "";
   position: absolute;
@@ -240,6 +230,14 @@ section {
   -webkit-clip-path: polygon(25% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(25% 0%, 0% 100%, 100% 100%);
 }
+@media screen and (max-width: 1380px) {
+  .banner_wrapper:before {
+    width: 100%;
+    height: 240px;
+    -webkit-clip-path: polygon(25% 0%, 0% 100%, 50% 100%);
+            clip-path: polygon(25% 0%, 0% 100%, 50% 100%);
+  }
+}
 @media screen and (max-width: 1080px) {
   .banner_wrapper:before {
     content: none;
@@ -259,6 +257,16 @@ section {
           clip-path: polygon(0 0%, 0 100%, 79% 100%);
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
+}
+@media screen and (max-width: 1380px) {
+  .banner_wrapper > .container:before {
+    -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+    left: -190px;
+    bottom: 115px;
+    width: calc(100% + 30px);
+    height: 120px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .banner_wrapper > .container:before {
@@ -347,6 +355,11 @@ section {
   margin: 0;
   padding: 76px 0;
 }
+@media screen and (max-width: 1380px) {
+  .banner_wrapper .product_wrapper {
+    padding: 60px 0;
+  }
+}
 @media screen and (max-width: 991px) {
   .banner_wrapper .product_wrapper {
     padding: 40px 0;
@@ -384,10 +397,15 @@ section {
   position: relative;
   margin-top: 130px;
 }
+@media screen and (max-width: 1380px) {
+  .banner_wrapper .product_wrapper .product_block .images_wrapper {
+    margin-top: 90px;
+    max-width: calc(100% - 50%);
+  }
+}
 @media screen and (max-width: 1080px) {
   .banner_wrapper .product_wrapper .product_block .images_wrapper {
     margin-top: 71px;
-    max-width: calc(100% - 50%);
   }
 }
 @media screen and (max-width: 991px) {
@@ -404,6 +422,11 @@ section {
   display: block;
   width: 100%;
   max-width: 398px;
+}
+@media screen and (max-width: 1380px) {
+  .banner_wrapper .product_wrapper .product_block .images_wrapper .img-tab.active {
+    max-width: 325px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .banner_wrapper .product_wrapper .product_block .images_wrapper .img-tab.active {
@@ -464,11 +487,11 @@ section {
     right: 60px;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .banner_wrapper .product_wrapper .product_block .images_wrapper .price_block {
     width: 120px;
     height: 120px;
-    right: 70px;
+    right: 120px;
   }
   .banner_wrapper .product_wrapper .product_block .images_wrapper .price_block span {
     font-size: 18px;
@@ -479,6 +502,11 @@ section {
   .banner_wrapper .product_wrapper .product_block .images_wrapper .price_block:after {
     width: calc(100% - 8px);
     height: calc(100% - 8px);
+  }
+}
+@media screen and (max-width: 1080px) {
+  .banner_wrapper .product_wrapper .product_block .images_wrapper .price_block {
+    right: 70px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -554,10 +582,15 @@ section {
   display: block;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1380px) {
+  .banner_wrapper .product_wrapper .product_block .form_wrapper .product_title label {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .product_title label {
     font-size: 18px;
-    margin-bottom: 5px;
   }
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .product_title h1 {
@@ -566,6 +599,11 @@ section {
   color: #fff;
   font-weight: bold;
   line-height: 1.2;
+}
+@media screen and (max-width: 1380PX) {
+  .banner_wrapper .product_wrapper .product_block .form_wrapper .product_title h1 {
+    font-size: 34px;
+  }
 }
 @media screen and (max-width: 1080px) {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .product_title h1 {
@@ -584,6 +622,11 @@ section {
   border-radius: 15px;
   padding: 35px;
   border: 2px solid #fff3;
+}
+@media screen and (max-width: 1380px) {
+  .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 575px) {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block {
@@ -642,7 +685,7 @@ section {
   background: #f3e2c1;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.blue {
-  background: #f1f2ed;
+  background: #98afc9;
 }
 .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .btn-group a.green {
   background: #9cdfcf;
@@ -656,8 +699,8 @@ section {
   border-radius: 100%;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
   position: absolute;
 }
 @media screen and (max-width: 1380px) {
@@ -683,7 +726,7 @@ section {
 }
 @media screen and (max-width: 1380px) {
   .banner_wrapper .product_wrapper .product_block .form_wrapper .form_block .title label {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -885,6 +928,11 @@ section {
 }
 @media screen and (max-width: 1380px) {
   .showcase_wrapper .title {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .showcase_wrapper .title {
     margin-bottom: 20px;
   }
 }
@@ -896,7 +944,7 @@ section {
 }
 @media screen and (max-width: 1380px) {
   .showcase_wrapper .title h2 {
-    font-size: 34px;
+    font-size: 44px;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -917,7 +965,7 @@ section {
 }
 @media screen and (max-width: 1380px) {
   .showcase_wrapper .title h3 {
-    font-size: 60px;
+    font-size: 74px;
   }
 }
 @media screen and (max-width: 1080px) {
@@ -1071,16 +1119,6 @@ section {
 /* GALLERY BLOCK CSS START HERE */
 .gallery_wrapper {
   padding: 0 10px;
-}
-@media screen and (max-width: 1380px) {
-  .gallery_wrapper {
-    zoom: 0.9;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .gallery_wrapper {
-    zoom: 1;
-  }
 }
 .gallery_wrapper .gallery_block {
   display: -webkit-box;
@@ -1432,14 +1470,8 @@ section {
   padding: 90px 0 100px;
   overflow: hidden;
 }
-@media screen and (max-width: 1380px) {
-  .outdoors_wrapper {
-    zoom: 0.9;
-  }
-}
 @media screen and (max-width: 1080px) {
   .outdoors_wrapper {
-    zoom: 1;
     padding: 40px 0 50px;
   }
 }
@@ -1522,7 +1554,12 @@ section {
           animation: blink 0.7s infinite alternate;
   position: relative;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
+  .outdoors_wrapper .images_wrapper {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 1380px) {
   .outdoors_wrapper .images_wrapper {
     max-width: 520px;
   }
@@ -1567,16 +1604,6 @@ section {
   padding-top: 100px;
   background-color: #000027;
   overflow: hidden;
-}
-@media screen and (max-width: 1380px) {
-  .superpower_wrapper {
-    zoom: 0.78;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .superpower_wrapper {
-    zoom: 1;
-  }
 }
 .superpower_wrapper:after {
   content: "";
