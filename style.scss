@@ -126,6 +126,60 @@ section {overflow: hidden;}
 }
 /* BOOTSTRAP CSS END'S HERE */
 
+/* TOPBAR CSS START HERE */
+.topbar{
+    left: 0;
+    margin: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    p{
+        color: #fff;
+        font-size: 11px;
+        vertical-align: baseline;
+        margin-bottom: 0;
+        line-height: 1em;
+        margin-left: 0;
+        padding: 5px 0;
+        text-align: center;    
+        font-family: $SFP-Regular;
+        @media screen and (max-width:991px){
+            font-size: 11px;
+        }
+    }
+    &.topbar2 {
+        background-color: #f2f2f2;
+        border-bottom: none;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 22px;
+            color: #666;
+            font-weight: 400;
+        }
+        .count {
+            margin-left: 6px;
+            div{
+            padding: 0px;
+            background: transparent;
+            position: relative;
+            text-align: center;
+            color: #333;
+            font-family: $SFP-Regular;
+            font-size: calc(1.1em + 0.15vw);
+            min-width: 54px;
+            min-height: 25px;
+            }
+        }
+    }      
+}
+/* TOPBAR CSS END'S HERE */
+
 /* BANNER BLOCK CSS START HERE */ 
 .banner_wrapper{
     background-color: rgb(0, 0, 39);      
@@ -203,59 +257,6 @@ section {overflow: hidden;}
             z-index: 3;
         }
     }
-    /* TOPBAR CSS START HERE */
-    .topbar{
-        left: 0;
-        margin: auto;
-        position: relative;
-        top: 0;
-        width: 100%;
-        z-index: 3;
-        p{
-            color: #fff;
-            font-size: 11px;
-            vertical-align: baseline;
-            margin-bottom: 0;
-            line-height: 1em;
-            margin-left: 0;
-            padding: 5px 0;
-            text-align: center;    
-            font-family: $SFP-Regular;
-            @media screen and (max-width:991px){
-                font-size: 11px;
-            }
-        }
-        &.topbar2 {
-            background-color: #f2f2f2;
-            border-bottom: none;
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            p {
-                font-size: 17px;
-                font-weight: 300;
-                line-height: 22px;
-                color: #666;
-                font-weight: 400;
-            }
-            .count {
-                margin-left: 6px;
-               div{
-                padding: 0px;
-                background: transparent;
-                position: relative;
-                text-align: center;
-                color: #333;
-                font-family: $SFP-Regular;
-                font-size: calc(1.1em + 0.15vw);
-                min-width: 54px;
-                min-height: 25px;
-               }
-            }
-        }      
-    }
-    /* TOPBAR CSS END'S HERE */
     /* PRODUCT BLOCK CSS START HERE */
     .product_wrapper{
         margin: 0;

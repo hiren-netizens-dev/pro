@@ -194,6 +194,68 @@ section {
   }
 }
 /* BOOTSTRAP CSS END'S HERE */
+/* TOPBAR CSS START HERE */
+.topbar {
+  left: 0;
+  margin: auto;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.topbar p {
+  color: #fff;
+  font-size: 11px;
+  vertical-align: baseline;
+  margin-bottom: 0;
+  line-height: 1em;
+  margin-left: 0;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "SF-Pro-Display-Regular";
+}
+@media screen and (max-width: 991px) {
+  .topbar p {
+    font-size: 11px;
+  }
+}
+.topbar.topbar2 {
+  background-color: #f2f2f2;
+  border-bottom: none;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.topbar.topbar2 p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #666;
+  font-weight: 400;
+}
+.topbar.topbar2 .count {
+  margin-left: 6px;
+}
+.topbar.topbar2 .count div {
+  padding: 0px;
+  background: transparent;
+  position: relative;
+  text-align: center;
+  color: #333;
+  font-family: "SF-Pro-Display-Regular";
+  font-size: calc(1.1em + 0.15vw);
+  min-width: 54px;
+  min-height: 25px;
+}
+
+/* TOPBAR CSS END'S HERE */
 /* BANNER BLOCK CSS START HERE */
 .banner_wrapper {
   background-color: #000027;
@@ -201,8 +263,6 @@ section {
   overflow: hidden;
   max-width: 1920px;
   margin: 0 auto;
-  /* TOPBAR CSS START HERE */
-  /* TOPBAR CSS END'S HERE */
   /* PRODUCT BLOCK CSS START HERE */
   /* PRODUCT BLOCK CSS END'S HERE */
 }
@@ -291,65 +351,6 @@ section {
 .banner_wrapper > .container > div {
   position: relative;
   z-index: 3;
-}
-.banner_wrapper .topbar {
-  left: 0;
-  margin: auto;
-  position: relative;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-}
-.banner_wrapper .topbar p {
-  color: #fff;
-  font-size: 11px;
-  vertical-align: baseline;
-  margin-bottom: 0;
-  line-height: 1em;
-  margin-left: 0;
-  padding: 5px 0;
-  text-align: center;
-  font-family: "SF-Pro-Display-Regular";
-}
-@media screen and (max-width: 991px) {
-  .banner_wrapper .topbar p {
-    font-size: 11px;
-  }
-}
-.banner_wrapper .topbar.topbar2 {
-  background-color: #f2f2f2;
-  border-bottom: none;
-  padding: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.banner_wrapper .topbar.topbar2 p {
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 22px;
-  color: #666;
-  font-weight: 400;
-}
-.banner_wrapper .topbar.topbar2 .count {
-  margin-left: 6px;
-}
-.banner_wrapper .topbar.topbar2 .count div {
-  padding: 0px;
-  background: transparent;
-  position: relative;
-  text-align: center;
-  color: #333;
-  font-family: "SF-Pro-Display-Regular";
-  font-size: calc(1.1em + 0.15vw);
-  min-width: 54px;
-  min-height: 25px;
 }
 .banner_wrapper .product_wrapper {
   margin: 0;
